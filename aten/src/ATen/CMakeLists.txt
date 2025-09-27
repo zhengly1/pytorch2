@@ -443,7 +443,7 @@ if(USE_CUDA)
     ${native_quantized_cuda_cu}
     ${native_transformers_cuda_cu}
     ${cuda_generated_sources}
-    native/cuda/cutlass_extensions/ulp_gemm_interface.cu
+    ${CMAKE_CURRENT_SOURCE_DIR}/native/cuda/cutlass_extensions/ulp_gemm_interface.cu
   )
   list(APPEND ATen_CUDA_CPP_SRCS
     ${cuda_cpp}
